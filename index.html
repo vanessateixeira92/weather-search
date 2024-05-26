@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>My Weather App</title>
   </head>
   <body>
@@ -36,7 +37,7 @@
       <main>
         <div class="current-weather">
           <div>
-            <h1 class="current-city" id="city">Paris</h1>
+            <h1 class="current-city" id="city"></h1>
             <p class="current-details">
               Tuesday 14:49, scattered clouds
               <br />
@@ -44,9 +45,15 @@
             </p>
           </div>
           <div class="current-temperature">
-            <span class="current-temperature-icon">🌤️</span
-            ><span class="current-temperature-value">12</span
-            ><span class="current-temperature-units">°C</span>
+            <span class="current-temperature-icon" id="temperature-icon"
+              >🌤️</span
+            ><span
+              class="current-temperature-value"
+              id="temperature-value"
+            ></span
+            ><span class="current-temperature-units" id="temperature-units"
+              >°C</span
+            >
           </div>
         </div>
       </main>
